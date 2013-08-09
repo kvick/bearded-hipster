@@ -24,7 +24,7 @@ def get_for_lib(log, org, lib, version):
     """docstring for get_for_lib"""
 
     module_url = '{0}/{1}'.format(org, lib)
-    log.info(' - checking {0} for version {1}'.format(module_url, version))
+    log.debug(' - checking {0} for version {1}'.format(module_url, version))
     all_versions = get_versions_from_scruffy(log, module_url)
     newer_release_versions = get_newer_versions(log, all_versions['release'], version)
     newer_candidate_versions = get_newer_versions(log, all_versions['candidate'], version)
@@ -53,22 +53,15 @@ def get_for_lib(log, org, lib, version):
 
     newer_count = len(found_release)
     if newer_count > 0:
-        log.info(' !! there are {0} newer version(s) available {1} in {2}'.format(newer_count, 
-                                                                           found_release,
+        log.info(' * {0}/{1}/{2} from {3} is BEHIND'.format(org, lib, version,
+                                                            release.upper()))
+        log.info('   ! there are {0} newer version(s) available in {1}'.format(newer_count, 
                                                                            release))
+        log.debug('    ! -> {0}'.format(found_release))
     else:
-        log.info('{0}/{1} is up-to-date'.format(org, lib))
+        log.info(' = {0}/{1}/{2} from {3} is OK'.format(org, lib, version,
+                                                            release.upper()))
 
-'''
-    if newer_release_versions is None:
-        log.info(' ! didn\'t find {0} in {1} release versions'.format(version, len(release_versions)))
-    else:
-        newer_count = len(newer_release_versions)
-        if newer_count > 0:
-            log.info(' !! there are {0} newer version(s) available {1}'.format(newer_count, newer_release_versions))
-        else:
-            log.info('{0}/{1} is up-to-date'.format(org, lib))
-'''
 
 def parse_file(log, filename):
     """"""
@@ -77,7 +70,7 @@ def parse_file(log, filename):
            if line:
                match = re.search('^([\w\d.]+)#([\w\d-]+);([\d\w.-]+)', line)
                if match:
-                   log.info('org={0}, lib={1}, version={2}'.format(match.group(1),
+                   log.debug('org={0}, lib={1}, version={2}'.format(match.group(1),
                                                                 match.group(2),
                                                                 match.group(3)))
                    get_for_lib(log, match.group(1),match.group(2),match.group(3))
@@ -99,7 +92,7 @@ def get_versions_from_scruffy(log, module_url):
 
     # find by the CSS 'rev X' class
     for release in releases:
-        log.info('checking scruffy for {0} in the {1}'.format(module_url,
+        log.debug(' - checking scruffy for {0} in the {1}'.format(module_url,
                                                               scruffy_prefix +
                                                               release))
 
@@ -109,8 +102,8 @@ def get_versions_from_scruffy(log, module_url):
 
         all_versions[release] = versions
 
-        log.info(' =========== {0} versions ========== '.format(release)) 
-        log.info(versions)
+        log.debug(' =========== {0} versions ========== '.format(release)) 
+        log.debug(versions)
 
     return all_versions
 
