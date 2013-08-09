@@ -6,7 +6,6 @@
 #
 # Step 1. for each dependancy find the distance from the latest release version
 # Step 2. look for multiple versions of the same dep (e.g. base-server-explorer)
-#
 
 import logging
 import re
@@ -53,15 +52,14 @@ def get_for_lib(log, org, lib, version):
 
     newer_count = len(found_release)
     if newer_count > 0:
-        log.info(' * {0}/{1}/{2} from {3} is BEHIND'.format(org, lib, version,
-                                                            release.upper()))
+        log.info(' * {0}/{1}/{2} from {3} is BEHIND'.format (org, lib, version,
+                                                             release.upper()))
         log.info('   ! there are {0} newer version(s) available in {1}'.format(newer_count, 
                                                                            release))
         log.debug('    ! -> {0}'.format(found_release))
     else:
         log.info(' = {0}/{1}/{2} from {3} is OK'.format(org, lib, version,
                                                             release.upper()))
-
 
 def parse_file(log, filename):
     """"""
