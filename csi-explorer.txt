@@ -1,0 +1,981 @@
+All transitive dependencies [245]::
+
+netflix#nfastyanax;1.46.0
+    via: [netflix#awsutils;1.48.0, netflix#base-explorer-resources;1.7.0, netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#hermes;1.49.0, netflix#mapping-registry;1.15.0, netflix#persister;1.3.0]
+    deps: com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT commons-cli#commons-cli;1.2 netflix#astyanax;1.56.0 netflix#base-server-plugins;1.14.0 netflix#platform-aws;2.255 netflix#platform-ipc;2.255 netflix#platform-management;2.255 
+
+org.slf4j#slf4j-log4j12;1.6.1
+    via: [netflix#base-server-plugins;1.13.0, netflix#base-server-plugins;1.14.0, netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#server-context;1.44.0, netflix#server-context;1.45.0, org.apache.thrift#libthrift;0.7.0, org.apache.zookeeper#zookeeper;3.4.5]
+    deps: org.slf4j#slf4j-api;1.6.1 log4j#log4j;1.2.15 
+
+org.quartz-scheduler#quartz;2.0.2
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: commons-logging#commons-logging;1.1.1 
+
+com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT
+    via: [netflix#chukwaCollector;0.25.5, netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#nfastyanax;1.46.0, netflix#persister;1.3.0]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT 
+
+commons-cli#commons-cli;1.2
+    via: [netflix#nfastyanax;1.46.0]
+    deps: 
+
+netflix#astyanax;1.56.0
+    via: [netflix#nfastyanax;1.46.0]
+    deps: 
+
+netflix#base-server-plugins;1.14.0
+    via: [netflix#base-server-explorer;2.255, netflix#nfastyanax;1.46.0, netflix#platform-management;2.255, netflix#platform-status-renderers;2.255]
+    deps: com.google.guava#guava;11.0.1 com.sun.jersey#jersey-bundle;1.9.1 commons-lang#commons-lang;2.6 org.codehaus.jettison#jettison;1.2 org.slf4j#slf4j-api;1.6.1 org.slf4j#slf4j-log4j12;1.6.1 
+
+netflix#platform-aws;2.255
+    via: [netflix#base-explorer;2.269, netflix#epic-plugin;1.36.0, netflix#nfastyanax;1.46.0, netflix#platform-management;2.255]
+    deps: com.amazonaws#aws-java-sdk;1.3.27 com.google.code.simplejpa#simplejpa;alpha-0.7 com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.servo#servo-core;0.4.43 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 net.java.dev.jets3t#jets3t;0.9.0 net.sf.scannotation#scannotation;1.0.2 netflix#akmsclient;2.255 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-messaging;2.255 netflix#platform-utils;2.255 netflix#resourceregistry;1.17.0 netflix#server-context;1.44.0 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+netflix#platform-ipc;2.255
+    via: [netflix#adminresources;2.255, netflix#akmsclient;2.255, netflix#base-explorer;2.269, netflix#base-server-explorer;2.255, netflix#nfastyanax;1.46.0, netflix#platform-management;2.255, netflix#platform-status-renderers;2.255]
+    deps: avro#avro;1.6.3 avro#avro-compiler;1.6.3 com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.eureka#eureka-client;1.1.103 com.netflix.karyon#karyon-eureka;1.0.19 com.netflix.ribbon#ribbon-core;0.1.14 com.netflix.ribbon#ribbon-eureka;0.1.14 com.netflix.ribbon#ribbon-httpclient;0.1.14 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-beanutils#commons-beanutils;1.8.2 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-dependency-command;1.143.0 netflix#platform-pool;2.255 netflix#platform-sla;2.255 netflix#platform-utils;2.255 netflix#resourceregistry;1.17.0 netflix#server-context;1.44.0 netflix#statistics;1.7.0 org.apache.httpcomponents#httpclient;4.2.1 org.apache.httpcomponents#httpcore;4.2.1 org.bouncycastle#bcprov-jdk16;1.46 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+netflix#platform-management;2.255
+    via: [netflix#nfastyanax;1.46.0]
+    deps: com.google.code.simplejpa#simplejpa;alpha-0.7 com.google.code.typica#typica;1.5.2a com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.blitz4j#blitz4j;1.31 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-lang#commons-lang;2.6 jdom#jdom;1.0 net.java.dev.jets3t#jets3t;0.9.0 net.sf.scannotation#scannotation;1.0.2 netflix#adminresources;2.255 netflix#base-server-plugins;1.13.0 netflix#epic-plugin;1.36.0 netflix#moduleRegistry;1.5.0 netflix#nf-build;1.4.0 netflix#nflibrary;2.255 netflix#platform-aws;2.255 netflix#platform-core;2.255 netflix#platform-dc;2.255 netflix#platform-ipc;2.255 netflix#platform-logimpl;2.255 netflix#platform-messaging;2.255 netflix#platform-pool;2.255 netflix#platform-status-renderers;2.255 netflix#platform-utils;2.255 org.bouncycastle#bcprov-jdk16;1.46 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT, high-scale-lib#high-scale-lib;1.1.2]
+    deps: 
+
+com.google.guava#guava;14.0.1
+    via: [com.netflix.archaius#archaius-core;0.5.11, com.netflix.archaius#archaius-core;0.5.8, com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT, com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2, com.netflix.karyon#karyon-eureka;1.0.19, com.netflix.karyon#karyon-spi;1.0.19, com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-core;0.2.2, com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2, com.netflix.servo#servo-core;0.4.43, com.netflix.servo#servo-core;0.4.44, netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#akmsclient;2.255, netflix#akmsclient;2.269, netflix#base-server-plugins;1.13.0, netflix#cryptexclient;2.269, netflix#epic-plugin;1.36.0, netflix#nf-eventbus;1.5.0, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-logimpl;2.255, netflix#platform-logimpl;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, netflix#platform-utils;2.255, netflix#platform-utils;2.269, org.reflections#reflections;0.9.8]
+    deps: 
+
+com.eaio.uuid#uuid;3.2
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: 
+
+org.codehaus.jettison#jettison;1.2
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT, com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, net.spy#spymemcached;2.7.3_11, netflix#base-explorer;2.269, netflix#base-server-explorer;2.255, netflix#base-server-explorer;2.269, netflix#base-server-plugins;1.13.0, netflix#base-server-plugins;1.14.0, netflix#base-server;1.81.0, netflix#cryptexclient;2.269, netflix#platform;2.269, org.apache.cxf#cxf;2.2.3]
+    deps: stax#stax-api;1.0.1 
+
+com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: 
+
+org.xerial.snappy#snappy-java;1.0.4.1
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT, kafka#core;kafka-0.7.1.9, netflix#hermes;1.49.0]
+    deps: 
+
+com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 
+
+com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 org.apache.servicemix.bundles#org.apache.servicemix.bundles.commons-csv;1.0-r706900_3 org.jboss.netty#netty;3.2.4.Final com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT org.apache.cassandra#cassandra-all;1.2.1.2 
+
+com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT org.apache.thrift#libthrift;0.7.0 org.apache.cassandra#cassandra-thrift;1.2.1.2 
+
+com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT 
+
+com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax-queue;1.56.43-SNAPSHOT, com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT 
+
+com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-recipes;1.56.43-SNAPSHOT javax.persistence#persistence-api;1.0 
+
+com.netflix.astyanax#astyanax-examples;1.56.43-SNAPSHOT
+    via: [com.netflix.astyanax#astyanax;1.56.43-SNAPSHOT]
+    deps: joda-time#joda-time;1.6.2 com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 com.google.guava#guava;14.0.1 com.eaio.uuid#uuid;3.2 org.slf4j#slf4j-api;1.6.4 org.codehaus.jettison#jettison;1.2 commons-codec#commons-codec;1.5 commons-lang#commons-lang;2.4 com.googlecode.concurrentlinkedhashmap#concurrentlinkedhashmap-lru;1.3 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 org.xerial.snappy#snappy-java;1.0.4.1 com.netflix.astyanax#astyanax-core;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT 
+
+stax#stax-api;1.0.1
+    via: [javax.xml.bind#jaxb-api;2.2.3, org.apache.cxf#cxf;2.2.3, org.codehaus.jettison#jettison;1.2, org.codehaus.woodstox#wstx-asl;3.2.9]
+    deps: 
+
+org.apache.servicemix.bundles#org.apache.servicemix.bundles.commons-csv;1.0-r706900_3
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT]
+    deps: 
+
+org.jboss.netty#netty;3.2.4.Final
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT, net.spy#spymemcached;2.7.3_11]
+    deps: 
+
+org.apache.cassandra#cassandra-all;1.2.1.2
+    via: [com.netflix.astyanax#astyanax-cassandra;1.56.43-SNAPSHOT]
+    deps: 
+
+org.apache.thrift#libthrift;0.7.0
+    via: [com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT, libthrift#libthrift;0.7.0, netflix#platform-chukwaClient;2.269]
+    deps: org.slf4j#slf4j-api;1.5.8 org.slf4j#slf4j-log4j12;1.5.8 commons-lang#commons-lang;2.5 javax.servlet#servlet-api;2.5 
+
+org.apache.cassandra#cassandra-thrift;1.2.1.2
+    via: [com.netflix.astyanax#astyanax-thrift;1.56.43-SNAPSHOT]
+    deps: 
+
+javax.servlet#servlet-api;2.5
+    via: [netflix#eventbus;1.5.0, netflix#nf-eventbus;1.5.0, org.apache.thrift#libthrift;0.7.0]
+    deps: 
+
+javax.persistence#persistence-api;1.0
+    via: [com.netflix.astyanax#astyanax-entity-mapper;1.56.43-SNAPSHOT, netflix#platform;2.269]
+    deps: 
+
+commons-lang#commons-lang;2.6
+    via: [com.google.code.simplejpa#simplejpa;alpha-0.7, commons-configuration#commons-configuration;1.8, netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#akmsclient;2.255, netflix#akmsclient;2.269, netflix#awsutils;1.48.0, netflix#base-server-plugins;1.13.0, netflix#base-server-plugins;1.14.0, netflix#cryptexclient;2.269, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#nfsso;1.9.0, netflix#persister;1.3.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-dc;2.255, netflix#platform-dc;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, netflix#platform-utils;2.255, netflix#platform-utils;2.269]
+    deps: 
+
+javax.ws.rs#jsr311-api;1.1.1
+    via: [com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2, com.sun.jersey#jersey-bundle;1.11.1, com.sun.jersey#jersey-bundle;1.9.1, netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#nfsso;1.9.0, netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: 
+
+com.amazonaws#aws-java-sdk;1.3.27
+    via: [com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.servo#servo-aws;0.4.32, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: commons-codec#commons-codec;1.3 commons-logging#commons-logging;1.1.1 org.apache.httpcomponents#httpclient;4.1.2 org.codehaus.jackson#jackson-core-asl;1.9.2 org.codehaus.jackson#jackson-mapper-asl;1.9.2 
+
+com.google.code.simplejpa#simplejpa;alpha-0.7
+    via: [netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: commons-lang#commons-lang;2.4 commons-beanutils#commons-beanutils;[1.6,2.0) commons-collections#commons-collections;3.2.1 net.java.dev.jets3t#jets3t;0.6+ com.google.code.typica#typica;1.5.1 
+
+com.google.protobuf#protobuf-java;2.1.0
+    via: [netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: 
+
+com.netflix.servo#servo-core;0.4.43
+    via: [com.netflix.blitz4j#blitz4j;1.31, com.netflix.eureka#eureka-client;1.1.103, com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.1.14, netflix#adminresources;2.255, netflix#nf-eventbus;1.5.0, netflix#platform-aws;2.255, netflix#platform-dependency-command;1.143.0, netflix#platform-sla;2.255, netflix#platform-status-renderers;2.255]
+    deps: org.slf4j#slf4j-api;1.6.3 com.google.guava#guava;11.0.1 com.google.code.findbugs#annotations;2.0.0 
+
+com.sun.jersey#jersey-bundle;1.11.1
+    via: [com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2, netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#base-explorer;2.269, netflix#base-server-plugins;1.13.0, netflix#nf-eventbus;1.5.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: javax.ws.rs#jsr311-api;1.1.1 
+
+com.sun.jersey.contribs#jersey-apache-client;1.8
+    via: [netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: commons-httpclient#commons-httpclient;3.1 
+
+com.thoughtworks.xstream#xstream;1.4.2
+    via: [com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: xmlpull#xmlpull;1.1.3.1 xpp3#xpp3_min;1.1.4c 
+
+commons-collections#commons-collections;3.2.1
+    via: [com.google.code.simplejpa#simplejpa;alpha-0.7, com.netflix.blitz4j#blitz4j;1.31, com.netflix.blitz4j#blitz4j;1.32, com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-core;0.2.2, com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2, commons-beanutils#commons-beanutils;1.6, commons-beanutils#commons-beanutils;1.8.2, commons-configuration#commons-configuration;1.8, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#persister;1.3.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: 
+
+commons-configuration#commons-configuration;1.8
+    via: [com.netflix.archaius#archaius-core;0.3.3, com.netflix.archaius#archaius-core;0.5.11, com.netflix.archaius#archaius-core;0.5.4, com.netflix.archaius#archaius-core;0.5.8, netflix#awsutils;1.48.0, netflix#base-server;1.81.0, netflix#concurrent;1.11.0, netflix#evcache-client2;1.19.0, netflix#evcache-client;1.99.0, netflix#geoip-client;1.70.0, netflix#identity;1.79.0, netflix#mapping-registry;1.15.0, netflix#nfi18n-core;1.42.0, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#nfsso;1.9.0, netflix#persister;1.3.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269, netflix#platform-dc;2.255, netflix#platform-dc;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-logimpl;2.255, netflix#platform-logimpl;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: commons-collections#commons-collections;3.2.1 commons-lang#commons-lang;2.4 commons-logging#commons-logging;1.1.+ 
+
+commons-httpclient#commons-httpclient;3.1
+    via: [com.google.code.typica#typica;1.5.1, com.google.code.typica#typica;1.5.2a, com.sun.jersey.contribs#jersey-apache-client;1.8, netflix#akmsclient;2.255, netflix#akmsclient;2.269, netflix#geoip-client;1.70.0, netflix#httputil;1.60.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, org.apache.solr#solr-solrj;1.4.0]
+    deps: commons-logging#commons-logging;1.1.1 commons-codec#commons-codec;1.3 
+
+commons-io#commons-io;2.4
+    via: [netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#base-explorer;2.269, netflix#base-server;1.81.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: 
+
+net.java.dev.jets3t#jets3t;0.9.0
+    via: [com.google.code.simplejpa#simplejpa;alpha-0.7, netflix#persister;1.3.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: commons-codec#commons-codec;1.4 commons-logging#commons-logging;1.1.1 org.apache.httpcomponents#httpclient;4.1.2 com.jamesmurty#java-xmlbuilder;0.4 
+
+net.sf.scannotation#scannotation;1.0.2
+    via: [netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-dependency-command;1.143.0, netflix#platform-dependency-command;1.147.0, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: javassist#javassist;3.6.0.GA 
+
+netflix#akmsclient;2.255
+    via: [netflix#platform-aws;2.255]
+    deps: com.google.guava#guava;14.0.1 commons-httpclient#commons-httpclient;3.1 commons-lang#commons-lang;2.6 joda-time#joda-time;2.0 netflix#platform-ipc;2.255 
+
+netflix#nflibrary;2.255
+    via: [netflix#adminresources;2.255, netflix#base-explorer;2.269, netflix#base-server-explorer;2.255, netflix#platform-aws;2.255, netflix#platform-dc;2.255, netflix#platform-ipc;2.255, netflix#platform-logimpl;2.255, netflix#platform-management;2.255, netflix#platform-pool;2.255, netflix#platform-sla;2.255, netflix#platform-utils;2.255]
+    deps: com.google.guava#guava;14.0.1 com.google.inject#guice;3.0 com.netflix.archaius#archaius-core;0.5.11 com.netflix.governator#governator;1.2.2 com.netflix.karyon#karyon-eureka;1.0.19 commons-beanutils#commons-beanutils;1.6 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 commons-logging#commons-logging;1.1.1 netflix#SRWrapper;1.6.4 netflix#moduleRegistry;1.5.0 netflix#platform-core;2.255 org.codehaus.woodstox#wstx-asl;3.2.9 
+
+netflix#platform-core;2.255
+    via: [netflix#adminresources;2.255, netflix#base-explorer;2.269, netflix#base-server-explorer;2.255, netflix#epic-plugin;1.36.0, netflix#nflibrary;2.255, netflix#platform-aws;2.255, netflix#platform-dc;2.255, netflix#platform-dependency-command;1.143.0, netflix#platform-ipc;2.255, netflix#platform-logimpl;2.255, netflix#platform-management;2.255, netflix#platform-messaging;2.255, netflix#platform-pool;2.255, netflix#platform-sla;2.255, netflix#platform-status-renderers;2.255, netflix#platform-utils;2.255]
+    deps: com.amazonaws#aws-java-sdk;1.3.27 com.google.guava#guava;14.0.1 com.google.inject#guice;3.0 com.google.inject.extensions#guice-multibindings;3.0 com.netflix.archaius#archaius-core;0.5.11 com.netflix.blitz4j#blitz4j;1.31 com.sun.jersey#jersey-bundle;1.11.1 com.thoughtworks.xstream#xstream;1.4.2 commons-codec#commons-codec;1.4 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 commons-logging#commons-logging;1.1.1 javax.ws.rs#jsr311-api;1.1.1 log4j#log4j;1.2.17 netflix#server-context;1.44.0 org.aspectj#aspectjweaver;1.6.8 
+
+netflix#platform-messaging;2.255
+    via: [netflix#platform-aws;2.255, netflix#platform-management;2.255]
+    deps: netflix#platform-core;2.255 
+
+netflix#platform-utils;2.255
+    via: [netflix#platform-aws;2.255, netflix#platform-dc;2.255, netflix#platform-dependency-command;1.143.0, netflix#platform-ipc;2.255, netflix#platform-management;2.255]
+    deps: com.google.guava#guava;14.0.1 commons-lang#commons-lang;2.6 javax.mail#mail;1.4.4 joda-time#joda-time;2.0 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-logimpl;2.255 netflix#server-context;1.44.0 netflix#statistics;1.7.0 org.apache.commons#commons-math;2.2 
+
+netflix#resourceregistry;1.17.0
+    via: [netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: 
+
+netflix#server-context;1.44.0
+    via: [netflix#platform-aws;2.255, netflix#platform-core;2.255, netflix#platform-dependency-command;1.143.0, netflix#platform-ipc;2.255, netflix#platform-utils;2.255]
+    deps: org.slf4j#slf4j-log4j12;1.6.1 org.slf4j#slf4j-api;1.6.1 netflix#basicTypes;1.42.0 
+
+org.codehaus.jackson#jackson-core-asl;1.9.11
+    via: [com.amazonaws#aws-java-sdk;1.3.27, com.netflix.archaius#archaius-core;0.5.11, com.netflix.hystrix#hystrix-metrics-event-stream;1.2.16, com.netflix.hystrix#hystrix-metrics-event-stream;1.3.0, netflix#base-explorer;2.269, netflix#nf-eventbus;1.5.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, org.codehaus.jackson#jackson-mapper-asl;1.9.11]
+    deps: 
+
+org.codehaus.jackson#jackson-mapper-asl;1.9.11
+    via: [com.amazonaws#aws-java-sdk;1.3.27, com.netflix.archaius#archaius-core;0.5.11, netflix#base-explorer;2.269, netflix#nf-eventbus;1.5.0, netflix#platform-aws;2.255, netflix#platform-aws;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: org.codehaus.jackson#jackson-core-asl;1.9.11 
+
+commons-logging#commons-logging;1.1.1
+    via: [com.amazonaws#aws-java-sdk;1.3.27, com.google.code.typica#typica;1.5.1, com.google.code.typica#typica;1.5.2a, commons-beanutils#commons-beanutils;1.6, commons-beanutils#commons-beanutils;1.8.2, commons-configuration#commons-configuration;1.8, commons-httpclient#commons-httpclient;3.1, commons-jxpath#commons-jxpath;1.3, net.java.dev.jets3t#jets3t;0.9.0, netflix#evcache-client2;1.19.0, netflix#evcache-client;1.99.0, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#persister;1.3.0, netflix#platform-core;2.255, netflix#platform-core;2.269, org.apache.cxf#cxf;2.2.3, org.apache.httpcomponents#httpclient;4.1.2, org.apache.httpcomponents#httpclient;4.2.1, org.apache.neethi#neethi;2.0.4, org.quartz-scheduler#quartz;2.0.2]
+    deps: 
+
+commons-beanutils#commons-beanutils;1.8.2
+    via: [com.google.code.simplejpa#simplejpa;alpha-0.7, commons-jxpath#commons-jxpath;1.3, netflix#nflibrary;2.255, netflix#nfsso;1.9.0, netflix#platform-ipc;2.255]
+    deps: commons-logging#commons-logging;1.+ commons-collections#commons-collections;[2.+,3.2.+) 
+
+com.jamesmurty#java-xmlbuilder;0.4
+    via: [net.java.dev.jets3t#jets3t;0.9.0]
+    deps: 
+
+com.google.code.findbugs#annotations;2.0.0
+    via: [com.netflix.archaius#archaius-core;0.5.11, com.netflix.netflix-commons#netflix-statistics;0.1.1, com.netflix.servo#servo-aws;0.4.21, com.netflix.servo#servo-aws;0.4.32, com.netflix.servo#servo-core;0.4.43, com.netflix.servo#servo-core;0.4.44, netflix#awsutils;1.48.0]
+    deps: 
+
+xmlpull#xmlpull;1.1.3.1
+    via: [com.thoughtworks.xstream#xstream;1.4.2]
+    deps: 
+
+xpp3#xpp3_min;1.1.4c
+    via: [com.thoughtworks.xstream#xstream;1.4.2]
+    deps: 
+
+joda-time#joda-time;2.0
+    via: [netflix#akmsclient;2.255, netflix#akmsclient;2.269, netflix#base-explorer;2.269, netflix#evcache-client;1.99.0, netflix#nf-eventbus;1.5.0, netflix#platform-status-renderers;2.255, netflix#platform-status-renderers;2.269, netflix#platform-utils;2.255, netflix#platform-utils;2.269]
+    deps: 
+
+avro#avro;1.6.3
+    via: [netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: 
+
+avro#avro-compiler;1.6.3
+    via: [netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: 
+
+com.netflix.eureka#eureka-client;1.1.103
+    via: [com.netflix.karyon#karyon-eureka;1.0.19, com.netflix.ribbon#ribbon-eureka;0.1.14, netflix#platform-ipc;2.255]
+    deps: com.thoughtworks.xstream#xstream;1.4.2 com.netflix.archaius#archaius-core;0.3.3 javax.ws.rs#jsr311-api;1.1.1 com.netflix.servo#servo-core;0.4.36 com.sun.jersey#jersey-bundle;1.9.1 com.sun.jersey.contribs#jersey-apache-client4;1.8 org.apache.httpcomponents#httpclient;4.1.2 org.codehaus.jettison#jettison;1.2 
+
+com.netflix.karyon#karyon-eureka;1.0.19
+    via: [netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: org.slf4j#slf4j-api;1.6.4 com.google.guava#guava;11.0.2 com.netflix.karyon#karyon-spi;1.0.19 com.netflix.archaius#archaius-core;0.5.4 com.netflix.eureka#eureka-client;1.1.73 
+
+com.netflix.ribbon#ribbon-core;0.1.14
+    via: [com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.1.14, netflix#platform-ipc;2.255]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;11.0.2 com.netflix.archaius#archaius-core;0.5.8 com.netflix.netflix-commons#netflix-commons-util;0.1.1 javax.ws.rs#jsr311-api;1.1.1 commons-collections#commons-collections;3.2.1 com.netflix.netflix-commons#netflix-statistics;0.1.1 
+
+com.netflix.ribbon#ribbon-eureka;0.1.14
+    via: [netflix#platform-ipc;2.255]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;11.0.2 com.netflix.archaius#archaius-core;0.5.8 com.netflix.netflix-commons#netflix-commons-util;0.1.1 javax.ws.rs#jsr311-api;1.1.1 commons-collections#commons-collections;3.2.1 com.netflix.ribbon#ribbon-core;0.1.14 com.netflix.eureka#eureka-client;1.1.73 com.amazonaws#aws-java-sdk;1.3.27 
+
+com.netflix.ribbon#ribbon-httpclient;0.1.14
+    via: [netflix#platform-ipc;2.255]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;11.0.2 com.netflix.archaius#archaius-core;0.5.8 com.netflix.netflix-commons#netflix-commons-util;0.1.1 javax.ws.rs#jsr311-api;1.1.1 commons-collections#commons-collections;3.2.1 com.netflix.ribbon#ribbon-core;0.1.14 org.apache.httpcomponents#httpclient;4.1.2 com.sun.jersey#jersey-bundle;1.9.1 com.sun.jersey.contribs#jersey-apache-client4;1.8 
+
+netflix#platform-dependency-command;1.143.0
+    via: [netflix#platform-ipc;2.255]
+    deps: com.netflix.hystrix#hystrix-core;1.2.16 com.netflix.hystrix#hystrix-metrics-event-stream;1.2.16 org.javassist#javassist;3.17.1-GA net.sf.scannotation#scannotation;1.0.2 netflix#platform-core;2.169 netflix#platform-utils;2.169 netflix#server-context;1.39.0 com.netflix.servo#servo-core;0.4.28 netflix#eventbus;1.5.0 
+
+netflix#platform-pool;2.255
+    via: [netflix#platform-dc;2.255, netflix#platform-ipc;2.255, netflix#platform-management;2.255]
+    deps: netflix#nflibrary;2.255 netflix#platform-core;2.255 
+
+netflix#platform-sla;2.255
+    via: [netflix#platform-ipc;2.255]
+    deps: com.netflix.servo#servo-core;0.4.43 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#statistics;1.7.0 org.apache.commons#commons-math;2.2 
+
+netflix#statistics;1.7.0
+    via: [netflix#base-server;1.81.0, netflix#concurrent;1.11.0, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-sla;2.255, netflix#platform-sla;2.269, netflix#platform-utils;2.255, netflix#platform-utils;2.269]
+    deps: 
+
+org.apache.httpcomponents#httpclient;4.2.1
+    via: [com.amazonaws#aws-java-sdk;1.3.27, com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2, com.sun.jersey.contribs#jersey-apache-client4;1.8, net.java.dev.jets3t#jets3t;0.9.0, netflix#base-explorer;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269]
+    deps: org.apache.httpcomponents#httpcore;4.2.1 org.apache.httpcomponents#httpmime;4.2.1 commons-logging#commons-logging;1.1.1 commons-codec#commons-codec;1.6 
+
+org.apache.httpcomponents#httpcore;4.2.1
+    via: [netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, org.apache.httpcomponents#httpclient;4.2.1]
+    deps: 
+
+org.bouncycastle#bcprov-jdk16;1.46
+    via: [netflix#cryptexclient;2.269, netflix#crypto-common;2.269, netflix#platform-ipc;2.255, netflix#platform-ipc;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269, org.bouncycastle#bcpg-jdk16;1.46]
+    deps: 
+
+com.sun.jersey.contribs#jersey-apache-client4;1.8
+    via: [com.netflix.eureka#eureka-client;1.1.103, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2]
+    deps: org.apache.httpcomponents#httpclient;4.1.1 
+
+org.apache.httpcomponents#httpmime;4.2.1
+    via: [org.apache.httpcomponents#httpclient;4.2.1]
+    deps: 
+
+commons-codec#commons-codec;1.6
+    via: [org.apache.httpcomponents#httpclient;4.2.1]
+    deps: 
+
+com.netflix.karyon#karyon-spi;1.0.19
+    via: [com.netflix.karyon#karyon-eureka;1.0.19]
+    deps: org.slf4j#slf4j-api;1.6.4 com.google.guava#guava;11.0.2 com.netflix.governator#governator;1.1.1 
+
+javax.inject#javax.inject;1
+    via: [com.google.inject#guice;3.0, com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2, com.sun.jersey.contribs#jersey-guice;1.9.1, netflix#nfzookeeper;1.34.0]
+    deps: 
+
+org.hibernate#hibernate-validator;4.1.0.Final
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2]
+    deps: javax.validation#validation-api;1.0.0.GA org.slf4j#slf4j-api;1.5.8 
+
+org.apache.xbean#xbean-finder;3.11.1
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2]
+    deps: org.apache.xbean#xbean-bundleutils;3.11.1 org.slf4j#slf4j-api;1.6.3 
+
+org.apache.xbean#xbean-bundleutils;3.11.1
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2, org.apache.xbean#xbean-finder;3.11.1]
+    deps: org.slf4j#slf4j-api;1.6.3 
+
+asm#asm-all;3.2
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2]
+    deps: 
+
+com.google.inject#guice;3.0
+    via: [com.google.inject#guice-assistedinject;3.0, com.google.inject#guice-grapher;3.0, com.google.inject.extensions#guice-multibindings;3.0, com.google.inject.extensions#guice-servlet;3.0, com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2, com.sun.jersey.contribs#jersey-guice;1.9.1, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: javax.inject#javax.inject;1 aopalliance#aopalliance;1.0 cglib#cglib-nodep;2.2.2 
+
+com.google.inject.extensions#guice-multibindings;3.0
+    via: [com.google.inject#guice-grapher;3.0, com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2, netflix#base-server;1.81.0, netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: com.google.inject#guice;3.0 
+
+org.codehaus.jsr166-mirror#jsr166y;1.7.0
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2]
+    deps: 
+
+com.google.inject#guice-grapher;3.0
+    via: [com.netflix.governator#governator;1.1.1, com.netflix.governator#governator;1.2.2]
+    deps: com.google.inject#guice-assistedinject;3.0 com.google.inject.extensions#guice-multibindings;3.0 com.google.inject#guice;3.0 
+
+javax.validation#validation-api;1.0.0.GA
+    via: [org.hibernate#hibernate-validator;4.1.0.Final]
+    deps: 
+
+aopalliance#aopalliance;1.0
+    via: [com.google.inject#guice;3.0]
+    deps: 
+
+cglib#cglib-nodep;2.2.2
+    via: [com.google.inject#guice;3.0]
+    deps: 
+
+com.google.inject#guice-assistedinject;3.0
+    via: [com.google.inject#guice-grapher;3.0]
+    deps: com.google.inject#guice;3.0 
+
+com.netflix.netflix-commons#netflix-commons-util;0.1.1
+    via: [com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-core;0.2.2, com.netflix.ribbon#ribbon-eureka;0.1.14, com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.1.14, com.netflix.ribbon#ribbon-httpclient;0.2.2]
+    deps: org.slf4j#slf4j-api;1.6.4 
+
+com.netflix.netflix-commons#netflix-statistics;0.1.1
+    via: [com.netflix.ribbon#ribbon-core;0.1.14, com.netflix.ribbon#ribbon-core;0.2.2]
+    deps: org.slf4j#slf4j-api;1.6.4 com.google.code.findbugs#annotations;2.0.0 
+
+com.netflix.archaius#archaius-core;0.5.11
+    via: [com.netflix.blitz4j#blitz4j;1.31, com.netflix.blitz4j#blitz4j;1.32, com.netflix.eureka#eureka-client;1.1.73, com.netflix.governator#governator;1.2.2, com.netflix.karyon#karyon-eureka;1.0.19, com.netflix.ribbon#ribbon-core;0.2.2, com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.2.2, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: com.google.code.findbugs#annotations;2.0.0 commons-configuration#commons-configuration;1.8 org.slf4j#slf4j-api;1.6.4 com.google.guava#guava;11.0.2 org.codehaus.jackson#jackson-mapper-asl;1.9.11 org.codehaus.jackson#jackson-core-asl;1.9.11 
+
+com.netflix.governator#governator;1.2.2
+    via: [com.netflix.karyon#karyon-spi;1.0.19, netflix#nflibrary;2.255, netflix#nflibrary;2.269]
+    deps: javax.inject#javax.inject;1 com.google.guava#guava;11.0.1 org.slf4j#slf4j-api;1.6.3 org.hibernate#hibernate-validator;4.1.0.Final org.apache.xbean#xbean-finder;3.11.1 org.apache.xbean#xbean-bundleutils;3.11.1 asm#asm-all;3.2 com.google.inject#guice;3.0 com.google.inject.extensions#guice-multibindings;3.0 com.netflix.archaius#archaius-core;0.4.1 org.codehaus.jsr166-mirror#jsr166y;1.7.0 com.google.inject#guice-grapher;3.0 
+
+netflix#SRWrapper;1.6.4
+    via: [netflix#cryptexclient;2.269, netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-dc;2.255, netflix#platform-dc;2.269]
+    deps: 
+
+netflix#moduleRegistry;1.5.0
+    via: [netflix#nflibrary;2.255, netflix#nflibrary;2.269, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: 
+
+com.netflix.blitz4j#blitz4j;1.31
+    via: [netflix#platform-core;2.255, netflix#platform-management;2.255]
+    deps: com.netflix.servo#servo-core;0.4.36 com.netflix.archaius#archaius-core;0.4.1 org.slf4j#slf4j-api;1.6.4 log4j#log4j;1.2.17 commons-collections#commons-collections;3.2.1 
+
+log4j#log4j;1.2.17
+    via: [com.netflix.blitz4j#blitz4j;1.31, net.spy#spymemcached;2.7.3_11, netflix#platform-core;2.255, netflix#platform-logimpl;2.255]
+    deps: 
+
+org.aspectj#aspectjweaver;1.6.8
+    via: [netflix#platform-core;2.255, netflix#platform-core;2.269]
+    deps: 
+
+netflix#basicTypes;1.42.0
+    via: [netflix#server-context;1.44.0]
+    deps: 
+
+org.codehaus.woodstox#wstx-asl;3.2.9
+    via: [netflix#nflibrary;2.255, netflix#nflibrary;2.269]
+    deps: stax#stax-api;1.0.1 
+
+com.netflix.hystrix#hystrix-core;1.2.16
+    via: [com.netflix.hystrix#hystrix-metrics-event-stream;1.2.16, netflix#platform-dependency-command;1.143.0]
+    deps: com.netflix.archaius#archaius-core;0.4.1 org.slf4j#slf4j-api;1.7.0 com.google.code.findbugs#jsr305;2.0.0 
+
+com.netflix.hystrix#hystrix-metrics-event-stream;1.2.16
+    via: [netflix#platform-dependency-command;1.143.0]
+    deps: com.netflix.hystrix#hystrix-core;1.2.16 org.codehaus.jackson#jackson-core-asl;1.9.2 
+
+org.javassist#javassist;3.17.1-GA
+    via: [netflix#platform-dependency-command;1.143.0, netflix#platform-dependency-command;1.147.0]
+    deps: 
+
+netflix#eventbus;1.5.0
+    via: [netflix#platform-dependency-command;1.143.0, netflix#platform-dependency-command;1.147.0]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.archaius#archaius-core;0.3.3 javax.servlet#servlet-api;2.5 com.sun.jersey#jersey-core;1.11 
+
+org.slf4j#slf4j-api;1.7.0
+    via: [com.netflix.hystrix#hystrix-core;1.2.16]
+    deps: 
+
+com.google.code.findbugs#jsr305;2.0.0
+    via: [com.netflix.hystrix#hystrix-core;1.2.16, com.netflix.hystrix#hystrix-core;1.3.0]
+    deps: 
+
+javax.mail#mail;1.4.4
+    via: [netflix#platform-utils;2.255, netflix#platform-utils;2.269]
+    deps: javax.activation#activation;1.1 
+
+netflix#platform-logimpl;2.255
+    via: [netflix#adminresources;2.255, netflix#platform-management;2.255, netflix#platform-utils;2.255]
+    deps: com.google.guava#guava;14.0.1 commons-configuration#commons-configuration;1.8 log4j#log4j;1.2.17 netflix#nf-eventbus;1.5.0 netflix#nflibrary;2.255 netflix#platform-core;2.255 
+
+org.apache.commons#commons-math;2.2
+    via: [netflix#nf-eventbus;1.5.0, netflix#platform-sla;2.255, netflix#platform-sla;2.269, netflix#platform-utils;2.255, netflix#platform-utils;2.269]
+    deps: 
+
+javax.activation#activation;1.1
+    via: [javax.mail#mail;1.4.4]
+    deps: 
+
+netflix#nf-eventbus;1.5.0
+    via: [netflix#platform-logimpl;2.255, netflix#platform-logimpl;2.269]
+    deps: com.google.code.gson#gson;2.1 com.google.guava#guava;11.0.1 com.netflix.archaius#archaius-core;0.3.3 com.netflix.servo#servo-core;0.4.43 com.sun.jersey#jersey-bundle;1.9.1 commons-jxpath#commons-jxpath;1.3 high-scale-lib#high-scale-lib;1.1.2 javax.servlet#servlet-api;2.5 joda-time#joda-time;2.0 org.antlr#antlr-runtime;3.4 org.apache.commons#commons-math;2.2 org.codehaus.jackson#jackson-core-asl;1.8.3 org.codehaus.jackson#jackson-mapper-asl;1.8.3 org.slf4j#slf4j-api;1.6.3 
+
+com.google.code.gson#gson;2.2.4
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#nf-eventbus;1.5.0]
+    deps: 
+
+commons-jxpath#commons-jxpath;1.3
+    via: [netflix#nf-eventbus;1.5.0]
+    deps: org.apache.ant#ant-optional;1.5.1 jdom#jdom;1.0 commons-beanutils#commons-beanutils;[1.4,2.0) commons-logging#commons-logging;1.1.1 
+
+high-scale-lib#high-scale-lib;1.1.2
+    via: [netflix#base-explorer;2.269, netflix#nf-eventbus;1.5.0]
+    deps: com.github.stephenc.high-scale-lib#high-scale-lib;1.1.2 
+
+org.antlr#antlr-runtime;3.4
+    via: [netflix#nf-eventbus;1.5.0]
+    deps: 
+
+jdom#jdom;1.0
+    via: [commons-jxpath#commons-jxpath;1.3, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: 
+
+com.sun.jersey#jersey-core;1.11
+    via: [netflix#eventbus;1.5.0]
+    deps: 
+
+com.google.code.typica#typica;1.5.2a
+    via: [netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: commons-logging#commons-logging;1.1.1 commons-httpclient#commons-httpclient;3.1 commons-codec#commons-codec;1.3 
+
+netflix#adminresources;2.255
+    via: [netflix#platform-management;2.255]
+    deps: com.google.guava#guava;14.0.1 com.google.inject.extensions#guice-servlet;3.0 com.netflix.servo#servo-core;0.4.43 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-guice;1.9.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 javax.ws.rs#jsr311-api;1.1.1 netflix#base-explorer;2.255 netflix#base-server-explorer;2.255 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-ipc;2.255 netflix#platform-logimpl;2.255 org.mortbay.jetty#jetty;6.1.22 org.slf4j#slf4j-api;1.6.4 
+
+netflix#epic-plugin;1.36.0
+    via: [netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: netflix#platform-core;2.164 netflix#platform-aws;2.164 com.google.guava#guava;11.0.2 
+
+netflix#nf-build;1.4.0
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#platform-management;2.255, netflix#platform-management;2.269]
+    deps: 
+
+netflix#platform-dc;2.255
+    via: [netflix#platform-management;2.255]
+    deps: commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 netflix#SRWrapper;1.6.4 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-pool;2.255 netflix#platform-utils;2.255 
+
+netflix#platform-status-renderers;2.255
+    via: [netflix#platform-management;2.255]
+    deps: com.netflix.servo#servo-core;0.4.43 joda-time#joda-time;2.0 netflix#base-server-plugins;1.13.0 netflix#platform-core;2.255 netflix#platform-ipc;2.255 
+
+com.google.inject.extensions#guice-servlet;3.0
+    via: [com.sun.jersey.contribs#jersey-guice;1.9.1, netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#base-server;1.81.0, netflix#nfsso;1.9.0]
+    deps: com.google.inject#guice;3.0 
+
+com.sun.jersey.contribs#jersey-guice;1.9.1
+    via: [netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#base-server;1.81.0]
+    deps: javax.inject#javax.inject;1 com.google.inject#guice;3.0 com.google.inject.extensions#guice-servlet;3.0 
+
+netflix#base-explorer;2.269
+    via: [netflix#adminresources;2.255, netflix#adminresources;2.269, netflix#base-explorer-resources;1.7.0, netflix#base-server-explorer;2.255, netflix#base-server-explorer;2.269, netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: com.sun.jersey#jersey-bundle;1.9.1 commons-io#commons-io;2.0.1 high-scale-lib#high-scale-lib;1.1.2 joda-time#joda-time;2.0 netflix#nflibrary;2.265 netflix#nfsso;1.9.0 netflix#platform-aws;2.265 netflix#platform-core;2.265 netflix#platform-ipc;2.265 org.apache.httpcomponents#httpclient;4.2.1 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 org.codehaus.jettison#jettison;1.2 org.freemarker#freemarker;2.3.15 org.picocontainer#picocontainer;2.14.1 
+
+netflix#base-server-explorer;2.255
+    via: [netflix#adminresources;2.255]
+    deps: netflix#base-explorer;2.255 netflix#base-server-plugins;1.13.0 netflix#nflibrary;2.255 netflix#platform-core;2.255 netflix#platform-ipc;2.255 org.codehaus.jettison#jettison;1.2 
+
+org.mortbay.jetty#jetty;6.1.22
+    via: [netflix#adminresources;2.255, netflix#adminresources;2.269]
+    deps: org.mortbay.jetty#jetty-util;6.1.22 
+
+netflix#nfsso;1.9.0
+    via: [netflix#base-explorer;2.269]
+    deps: org.slf4j#slf4j-api;1.6.4 org.reflections#reflections;0.9.8 javax.ws.rs#jsr311-api;1.1.1 commons-lang#commons-lang;2.6 commons-beanutils#commons-beanutils;1.6 commons-codec#commons-codec;1.4 commons-configuration#commons-configuration;1.8 com.google.inject.extensions#guice-servlet;3.0 com.netflix.governator#governator;1.1.0 com.netflix.archaius#archaius-core;0.5.8 
+
+org.freemarker#freemarker;2.3.15
+    via: [netflix#base-explorer;2.269]
+    deps: 
+
+org.picocontainer#picocontainer;2.14.1
+    via: [netflix#base-explorer;2.269]
+    deps: 
+
+org.reflections#reflections;0.9.8
+    via: [netflix#nfsso;1.9.0]
+    deps: com.google.guava#guava;11.0.1 javassist#javassist;3.12.1.GA dom4j#dom4j;1.6.1 
+
+javassist#javassist;3.12.1.GA
+    via: [org.reflections#reflections;0.9.8]
+    deps: 
+
+dom4j#dom4j;1.6.1
+    via: [org.reflections#reflections;0.9.8]
+    deps: xml-apis#xml-apis;1.0.b2 
+
+xml-apis#xml-apis;1.0.b2
+    via: [dom4j#dom4j;1.6.1]
+    deps: 
+
+org.mortbay.jetty#jetty-util;6.1.22
+    via: [org.mortbay.jetty#jetty;6.1.22]
+    deps: 
+
+netflix#platform;2.269
+    via: [netflix#base-explorer-resources;1.7.0, netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#hermes;1.49.0, netflix#httputil;1.60.0, netflix#membership-types;1.19.0, netflix#nfzookeeper;1.34.0, netflix#nfzookeeper;1.37.0]
+    deps: asm#asm;3.1 com.sun.xml.bind#jaxb-impl;2.2.4 javax.persistence#persistence-api;1.0 net.sf.trove4j#trove4j;2.0.4 netflix#adminresources;2.269 netflix#akmsclient;2.269 netflix#base-server-explorer;2.269 netflix#cryptexclient;2.269 netflix#crypto-common;2.269 netflix#nflibrary;2.269 netflix#platform-aws;2.269 netflix#platform-chukwaClient;2.269 netflix#platform-core;2.269 netflix#platform-dc;2.269 netflix#platform-ipc;2.269 netflix#platform-logimpl;2.269 netflix#platform-management;2.269 netflix#platform-messaging;2.269 netflix#platform-pool;2.269 netflix#platform-sla;2.269 netflix#platform-status-renderers;2.269 netflix#platform-utils;2.269 org.codehaus.jackson#jackson-mapper-asl;1.9.11 org.codehaus.jettison#jettison;1.2 
+
+netflix#persister;1.3.0
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: netflix#awsutils;1.48.0 com.netflix.astyanax#astyanax;1.56.24 netflix#nfastyanax;1.29.0 netflix#basicTypes;1.40.0 netflix#concurrent;1.11.0 netflix#evcache-client2;1.19.0 netflix#nflibrary;2.128 netflix#platform-aws;2.128 netflix#platform-core;2.128 netflix#platform-logimpl;2.128 netflix#platform-utils;2.128 com.google.code.findbugs#annotations;1.3.9 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 commons-logging#commons-logging;1.1.1 com.google.guava#guava;13.0.1 net.java.dev.jets3t#jets3t;0.9.0 net.spy#spymemcached;2.7.3_11 com.netflix.archaius#archaius-core;0.5.4 
+
+org.json#json;1.0
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834, netflix#identity;1.79.0]
+    deps: netflix#json;1.0 
+
+net.rforge#REngine;0.6.7
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: 
+
+net.rforge#RserveEngine;0.6.7
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: 
+
+org.jsoup#jsoup;1.6.3
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: 
+
+netflix#adminresources;2.269
+    via: [netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 com.google.inject.extensions#guice-servlet;3.0 com.netflix.servo#servo-core;0.4.44 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-guice;1.9.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 javax.ws.rs#jsr311-api;1.1.1 netflix#base-explorer;2.269 netflix#base-server-explorer;2.269 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-ipc;2.269 netflix#platform-logimpl;2.265 org.mortbay.jetty#jetty;6.1.22 org.slf4j#slf4j-api;1.6.4 
+
+netflix#akmsclient;2.269
+    via: [netflix#platform-aws;2.269, netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 commons-httpclient#commons-httpclient;3.1 commons-lang#commons-lang;2.6 joda-time#joda-time;2.0 netflix#platform-ipc;2.269 
+
+netflix#base-server-explorer;2.269
+    via: [netflix#adminresources;2.269, netflix#platform;2.269]
+    deps: netflix#base-explorer;2.269 netflix#base-server-plugins;1.13.0 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-ipc;2.269 org.codehaus.jettison#jettison;1.2 
+
+netflix#cryptexclient;2.269
+    via: [netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 commons-lang#commons-lang;2.6 netflix#SRWrapper;1.6.4 netflix#crypto-common;2.269 netflix#platform-dependency-command;1.147.0 netflix#platform-ipc;2.269 org.bouncycastle#bcpg-jdk16;1.46 org.bouncycastle#bcprov-jdk16;1.46 org.codehaus.jettison#jettison;1.2 safenet#lunaprovider;5.0.0 
+
+netflix#crypto-common;2.269
+    via: [netflix#cryptexclient;2.269, netflix#platform;2.269]
+    deps: log4j#log4j;1.2.15 netflix#platform-core;2.269 netflix#platform-logimpl;2.269 org.bouncycastle#bcmail-jdk16;1.46 org.bouncycastle#bcprov-jdk16;1.46 
+
+netflix#nflibrary;2.269
+    via: [netflix#adminresources;2.269, netflix#base-explorer;2.269, netflix#base-server-explorer;2.269, netflix#platform-aws;2.269, netflix#platform-chukwaClient;2.269, netflix#platform-dc;2.269, netflix#platform-ipc;2.269, netflix#platform-logimpl;2.269, netflix#platform-management;2.269, netflix#platform-pool;2.269, netflix#platform-sla;2.269, netflix#platform-utils;2.269, netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 com.google.inject#guice;3.0 com.netflix.archaius#archaius-core;0.5.11 com.netflix.governator#governator;1.2.2 com.netflix.karyon#karyon-eureka;1.0.19 commons-beanutils#commons-beanutils;1.6 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 commons-logging#commons-logging;1.1.1 netflix#SRWrapper;1.6.4 netflix#moduleRegistry;1.5.0 netflix#platform-core;2.269 org.codehaus.woodstox#wstx-asl;3.2.9 
+
+netflix#platform-aws;2.269
+    via: [netflix#base-explorer;2.269, netflix#epic-plugin;1.36.0, netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: com.amazonaws#aws-java-sdk;1.3.27 com.google.code.simplejpa#simplejpa;alpha-0.7 com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.servo#servo-core;0.4.44 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 net.java.dev.jets3t#jets3t;0.9.0 net.sf.scannotation#scannotation;1.0.2 netflix#akmsclient;2.269 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-messaging;2.269 netflix#platform-utils;2.269 netflix#resourceregistry;1.17.0 netflix#server-context;1.45.0 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+netflix#platform-chukwaClient;2.269
+    via: [netflix#platform;2.269]
+    deps: amazon#hadoop-core-emr;0.20.205.204 com.leansoft#bigqueue;0.7.0 com.yammer.metrics#metrics-core;2.2.0 log4j#log4j;1.2.15 netflix#nflibrary;2.269 netflix#platform-ipc;2.269 netflix#platform-logimpl;2.269 org.apache.thrift#libthrift;0.7.0 
+
+netflix#platform-core;2.269
+    via: [netflix#adminresources;2.269, netflix#base-explorer;2.269, netflix#base-server-explorer;2.269, netflix#crypto-common;2.269, netflix#epic-plugin;1.36.0, netflix#nflibrary;2.269, netflix#platform-aws;2.269, netflix#platform-dc;2.269, netflix#platform-dependency-command;1.147.0, netflix#platform-ipc;2.269, netflix#platform-logimpl;2.269, netflix#platform-management;2.269, netflix#platform-messaging;2.269, netflix#platform-pool;2.269, netflix#platform-sla;2.269, netflix#platform-status-renderers;2.269, netflix#platform-utils;2.269, netflix#platform;2.269]
+    deps: com.amazonaws#aws-java-sdk;1.3.27 com.google.guava#guava;14.0.1 com.google.inject#guice;3.0 com.google.inject.extensions#guice-multibindings;3.0 com.netflix.archaius#archaius-core;0.5.11 com.netflix.blitz4j#blitz4j;1.32 com.sun.jersey#jersey-bundle;1.11.1 com.thoughtworks.xstream#xstream;1.4.2 commons-codec#commons-codec;1.7 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 commons-logging#commons-logging;1.1.1 javax.ws.rs#jsr311-api;1.1.1 log4j#log4j;1.2.15 netflix#server-context;1.45.0 org.aspectj#aspectjweaver;1.6.8 
+
+netflix#platform-dc;2.269
+    via: [netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 netflix#SRWrapper;1.6.4 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-pool;2.269 netflix#platform-utils;2.269 
+
+netflix#platform-ipc;2.269
+    via: [netflix#adminresources;2.269, netflix#akmsclient;2.269, netflix#base-explorer;2.269, netflix#base-server-explorer;2.269, netflix#cryptexclient;2.269, netflix#platform-chukwaClient;2.269, netflix#platform-management;2.269, netflix#platform-status-renderers;2.269, netflix#platform;2.269]
+    deps: avro#avro;1.6.3 avro#avro-compiler;1.6.3 com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.eureka#eureka-client;1.1.108 com.netflix.karyon#karyon-eureka;1.0.19 com.netflix.ribbon#ribbon-core;0.2.2 com.netflix.ribbon#ribbon-eureka;0.2.2 com.netflix.ribbon#ribbon-httpclient;0.2.2 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-codec#commons-codec;1.7 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-io#commons-io;2.4 commons-lang#commons-lang;2.6 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-dependency-command;1.147.0 netflix#platform-pool;2.269 netflix#platform-sla;2.269 netflix#platform-utils;2.269 netflix#resourceregistry;1.17.0 netflix#server-context;1.45.0 netflix#statistics;1.7.0 org.apache.httpcomponents#httpclient;4.2.1 org.apache.httpcomponents#httpcore;4.2.1 org.bouncycastle#bcprov-jdk16;1.46 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+netflix#platform-logimpl;2.269
+    via: [netflix#adminresources;2.269, netflix#crypto-common;2.269, netflix#platform-chukwaClient;2.269, netflix#platform-management;2.269, netflix#platform-utils;2.269, netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 commons-configuration#commons-configuration;1.8 log4j#log4j;1.2.15 netflix#nf-eventbus;1.5.0 netflix#nflibrary;2.269 netflix#platform-core;2.269 
+
+netflix#platform-management;2.269
+    via: [netflix#platform;2.269]
+    deps: com.google.code.simplejpa#simplejpa;alpha-0.7 com.google.code.typica#typica;1.5.2a com.google.guava#guava;14.0.1 com.google.protobuf#protobuf-java;2.1.0 com.netflix.blitz4j#blitz4j;1.32 com.sun.jersey#jersey-bundle;1.11.1 com.sun.jersey.contribs#jersey-apache-client;1.8 com.thoughtworks.xstream#xstream;1.4.2 commons-collections#commons-collections;3.2.1 commons-configuration#commons-configuration;1.8 commons-httpclient#commons-httpclient;3.1 commons-lang#commons-lang;2.6 jdom#jdom;1.0 net.java.dev.jets3t#jets3t;0.9.0 net.sf.scannotation#scannotation;1.0.2 netflix#adminresources;2.269 netflix#base-server-plugins;1.13.0 netflix#epic-plugin;1.36.0 netflix#moduleRegistry;1.5.0 netflix#nf-build;1.4.0 netflix#nflibrary;2.269 netflix#platform-aws;2.269 netflix#platform-core;2.269 netflix#platform-dc;2.269 netflix#platform-ipc;2.269 netflix#platform-logimpl;2.269 netflix#platform-messaging;2.269 netflix#platform-pool;2.269 netflix#platform-status-renderers;2.269 netflix#platform-utils;2.269 org.bouncycastle#bcprov-jdk16;1.46 org.codehaus.jackson#jackson-core-asl;1.9.11 org.codehaus.jackson#jackson-mapper-asl;1.9.11 
+
+netflix#platform-messaging;2.269
+    via: [netflix#platform-aws;2.269, netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: netflix#platform-core;2.269 
+
+netflix#platform-pool;2.269
+    via: [netflix#platform-dc;2.269, netflix#platform-ipc;2.269, netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: netflix#nflibrary;2.269 netflix#platform-core;2.269 
+
+netflix#platform-sla;2.269
+    via: [netflix#platform-ipc;2.269, netflix#platform;2.269]
+    deps: com.netflix.servo#servo-core;0.4.44 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#statistics;1.7.0 org.apache.commons#commons-math;2.2 
+
+netflix#platform-status-renderers;2.269
+    via: [netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: com.netflix.servo#servo-core;0.4.44 joda-time#joda-time;2.0 netflix#base-server-plugins;1.13.0 netflix#platform-core;2.269 netflix#platform-ipc;2.269 
+
+netflix#platform-utils;2.269
+    via: [netflix#platform-aws;2.269, netflix#platform-dc;2.269, netflix#platform-dependency-command;1.147.0, netflix#platform-ipc;2.269, netflix#platform-management;2.269, netflix#platform;2.269]
+    deps: com.google.guava#guava;14.0.1 commons-lang#commons-lang;2.6 javax.mail#mail;1.4.4 joda-time#joda-time;2.0 netflix#nflibrary;2.269 netflix#platform-core;2.269 netflix#platform-logimpl;2.269 netflix#server-context;1.45.0 netflix#statistics;1.7.0 org.apache.commons#commons-math;2.2 
+
+com.netflix.servo#servo-core;0.4.44
+    via: [com.netflix.blitz4j#blitz4j;1.32, com.netflix.eureka#eureka-client;1.1.108, com.netflix.eureka#eureka-client;1.1.73, com.netflix.ribbon#ribbon-core;0.2.2, com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.2.2, netflix#adminresources;2.269, netflix#nf-eventbus;1.5.0, netflix#platform-aws;2.269, netflix#platform-dependency-command;1.147.0, netflix#platform-sla;2.269, netflix#platform-status-renderers;2.269]
+    deps: org.slf4j#slf4j-api;1.6.3 com.google.guava#guava;11.0.1 com.google.code.findbugs#annotations;2.0.0 
+
+commons-beanutils#commons-beanutils;1.6
+    via: [com.google.code.simplejpa#simplejpa;alpha-0.7, commons-jxpath#commons-jxpath;1.3, netflix#nflibrary;2.269, netflix#nfsso;1.9.0]
+    deps: commons-logging#commons-logging;1.+ commons-collections#commons-collections;[2.+,3.2.+) 
+
+com.netflix.blitz4j#blitz4j;1.32
+    via: [netflix#platform-core;2.269, netflix#platform-management;2.269]
+    deps: com.netflix.servo#servo-core;0.4.36 com.netflix.archaius#archaius-core;0.4.1 org.slf4j#slf4j-api;1.6.4 log4j#log4j;1.2.17 commons-collections#commons-collections;3.2.1 
+
+commons-codec#commons-codec;1.7
+    via: [com.amazonaws#aws-java-sdk;1.3.27, netflix#platform-core;2.269, netflix#platform-ipc;2.269]
+    deps: 
+
+netflix#server-context;1.45.0
+    via: [netflix#platform-aws;2.269, netflix#platform-core;2.269, netflix#platform-dependency-command;1.147.0, netflix#platform-ipc;2.269, netflix#platform-utils;2.269]
+    deps: netflix#basicTypes;1.43.0 org.slf4j#slf4j-api;1.6.1 org.slf4j#slf4j-log4j12;1.6.1 
+
+netflix#basicTypes;1.43.0
+    via: [netflix#server-context;1.45.0]
+    deps: 
+
+com.netflix.eureka#eureka-client;1.1.108
+    via: [com.netflix.ribbon#ribbon-eureka;0.2.2, netflix#platform-ipc;2.269]
+    deps: com.thoughtworks.xstream#xstream;1.4.2 com.netflix.archaius#archaius-core;0.3.3 javax.ws.rs#jsr311-api;1.1.1 com.netflix.servo#servo-core;0.4.36 com.sun.jersey#jersey-bundle;1.9.1 com.sun.jersey.contribs#jersey-apache-client4;1.8 org.apache.httpcomponents#httpclient;4.1.2 org.codehaus.jettison#jettison;1.2 
+
+com.netflix.ribbon#ribbon-core;0.2.2
+    via: [com.netflix.ribbon#ribbon-eureka;0.2.2, com.netflix.ribbon#ribbon-httpclient;0.2.2, netflix#platform-ipc;2.269]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;14.0.1 com.netflix.archaius#archaius-core;0.5.11 com.netflix.netflix-commons#netflix-commons-util;0.1.1 commons-collections#commons-collections;3.2.1 com.netflix.netflix-commons#netflix-statistics;0.1.1 
+
+com.netflix.ribbon#ribbon-eureka;0.2.2
+    via: [netflix#platform-ipc;2.269]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;14.0.1 com.netflix.archaius#archaius-core;0.5.11 com.netflix.netflix-commons#netflix-commons-util;0.1.1 commons-collections#commons-collections;3.2.1 com.netflix.ribbon#ribbon-core;0.2.2 com.netflix.eureka#eureka-client;1.1.107 
+
+com.netflix.ribbon#ribbon-httpclient;0.2.2
+    via: [netflix#platform-ipc;2.269]
+    deps: org.slf4j#slf4j-api;1.6.4 com.netflix.servo#servo-core;0.4.32 com.google.guava#guava;14.0.1 com.netflix.archaius#archaius-core;0.5.11 com.netflix.netflix-commons#netflix-commons-util;0.1.1 commons-collections#commons-collections;3.2.1 com.netflix.ribbon#ribbon-core;0.2.2 org.apache.httpcomponents#httpclient;4.1.2 com.sun.jersey#jersey-bundle;1.9.1 javax.ws.rs#jsr311-api;1.1.1 com.sun.jersey.contribs#jersey-apache-client4;1.8 
+
+netflix#platform-dependency-command;1.147.0
+    via: [netflix#cryptexclient;2.269, netflix#platform-ipc;2.269]
+    deps: com.netflix.hystrix#hystrix-core;1.3.0 com.netflix.hystrix#hystrix-metrics-event-stream;1.3.0 com.netflix.servo#servo-core;0.4.44 net.sf.scannotation#scannotation;1.0.2 netflix#eventbus;1.5.0 netflix#platform-core;2.265 netflix#platform-utils;2.265 netflix#server-context;1.45.0 org.javassist#javassist;3.17.1-GA 
+
+com.netflix.hystrix#hystrix-core;1.3.0
+    via: [com.netflix.hystrix#hystrix-metrics-event-stream;1.3.0, netflix#platform-dependency-command;1.147.0]
+    deps: com.netflix.archaius#archaius-core;0.4.1 com.netflix.rxjava#rxjava-core;0.10.0 org.slf4j#slf4j-api;1.7.0 com.google.code.findbugs#jsr305;2.0.0 
+
+com.netflix.hystrix#hystrix-metrics-event-stream;1.3.0
+    via: [netflix#platform-dependency-command;1.147.0]
+    deps: com.netflix.hystrix#hystrix-core;1.3.0 org.codehaus.jackson#jackson-core-asl;1.9.2 
+
+com.netflix.rxjava#rxjava-core;0.10.0
+    via: [com.netflix.hystrix#hystrix-core;1.3.0]
+    deps: 
+
+org.bouncycastle#bcpg-jdk16;1.46
+    via: [netflix#cryptexclient;2.269]
+    deps: org.bouncycastle#bcprov-jdk16;1.46 
+
+safenet#lunaprovider;5.0.0
+    via: [netflix#cryptexclient;2.269]
+    deps: 
+
+org.bouncycastle#bcmail-jdk16;1.46
+    via: [netflix#crypto-common;2.269]
+    deps: 
+
+amazon#hadoop-core-emr;0.20.205.204
+    via: [netflix#platform-chukwaClient;2.269]
+    deps: 
+
+com.leansoft#bigqueue;0.7.0
+    via: [netflix#platform-chukwaClient;2.269]
+    deps: log4j#log4j;1.2.17 
+
+com.yammer.metrics#metrics-core;2.2.0
+    via: [netflix#platform-chukwaClient;2.269]
+    deps: org.slf4j#slf4j-api;1.7.2 
+
+org.slf4j#slf4j-api;1.7.2
+    via: [com.yammer.metrics#metrics-core;2.2.0]
+    deps: 
+
+asm#asm;3.1
+    via: [netflix#platform;2.269, org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+com.sun.xml.bind#jaxb-impl;2.2.4
+    via: [netflix#platform;2.269]
+    deps: javax.xml.bind#jaxb-api;2.2.3 
+
+net.sf.trove4j#trove4j;2.0.4
+    via: [netflix#platform;2.269]
+    deps: 
+
+javax.xml.bind#jaxb-api;2.2.3
+    via: [com.sun.xml.bind#jaxb-impl;2.2.4, netflix#identity;1.79.0]
+    deps: stax#stax-api;1.0+ javax.activation#activation;1.1+ 
+
+javax.activation#activation;1.1.1
+    via: [javax.xml.bind#jaxb-api;2.2.3, javax.xml.soap#saaj-api;1.3, org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+netflix#awsutils;1.48.0
+    via: [netflix#persister;1.3.0]
+    deps: commons-configuration#commons-configuration;1.8 commons-lang#commons-lang;2.6 com.google.guava#guava;11.0.2 net.java.dev.jets3t#jets3t;0.8.1 net.spy#spymemcached;2.7.3_11 com.google.code.findbugs#annotations;2.0.0 netflix#nfastyanax;1.28.0 netflix#basicTypes;1.40.0 netflix#concurrent;1.11.0 netflix#evcache-client;1.99.0 netflix#nflibrary;2.117 netflix#platform-aws;2.117 netflix#platform-core;2.117 netflix#platform-utils;2.117 
+
+netflix#concurrent;1.11.0
+    via: [netflix#awsutils;1.48.0, netflix#persister;1.3.0]
+    deps: com.google.code.findbugs#annotations;1.3.9 commons-configuration#commons-configuration;1.8 netflix#nflibrary;2.113 netflix#platform-core;2.113 netflix#platform-utils;2.113 netflix#server-context;1.37.0 netflix#statistics;1.7.0 netflix#base-server;1.81.0 
+
+netflix#evcache-client2;1.19.0
+    via: [netflix#persister;1.3.0]
+    deps: net.spy#spymemcached;2.7.3_11 commons-configuration#commons-configuration;1.8 commons-logging#commons-logging;1.1.1 netflix#chukwaCollector;0.25.5 netflix#nflibrary;2.122 netflix#platform-core;2.122 netflix#platform-ipc;2.122 netflix#platform-logimpl;2.122 netflix#platform-management;2.122 netflix#platform-utils;2.122 netflix#apputils;1.49.0 com.netflix.eureka#eureka-client;1.1.72 
+
+net.spy#spymemcached;2.7.3_11
+    via: [netflix#awsutils;1.48.0, netflix#evcache-client2;1.19.0, netflix#evcache-client;1.99.0, netflix#persister;1.3.0]
+    deps: log4j#log4j;1.2.17 org.codehaus.jettison#jettison;1.2 org.jboss.netty#netty;3.2.4.Final 
+
+netflix#evcache-client;1.99.0
+    via: [netflix#awsutils;1.48.0]
+    deps: netflix#evcache-client2;1.17.0 commons-configuration#commons-configuration;1.8 commons-logging#commons-logging;1.1.1 net.spy#spymemcached;2.7.3_11 joda-time#joda-time;2.0 org.apache.solr#solr-solrj;1.4.0 netflix#chukwaCollector;0.23.7 netflix#nflibrary;2.113 netflix#platform-aws;2.113 netflix#platform-core;2.113 netflix#platform-ipc;2.113 netflix#platform-management;2.113 netflix#platform-messaging;2.113 netflix#platform-utils;2.113 
+
+netflix#base-server;1.81.0
+    via: [netflix#concurrent;1.11.0]
+    deps: commons-configuration#commons-configuration;1.8 commons-io#commons-io;2.4 com.google.guava#guava;11.0.2 org.codehaus.jettison#jettison;1.2 com.ibm.icu#icu4j;4.8.1 netflix#platform-dependency-command;1.120.0 netflix#basicTypes;1.40.0 netflix#nflibrary;2.113 netflix#platform-core;2.113 netflix#platform-ipc;2.113 netflix#platform-logimpl;2.113 netflix#platform-management;2.113 netflix#platform-status-renderers;2.113 netflix#platform-utils;2.113 netflix#epic-plugin;1.27.0 netflix#atlas-client;1.28 netflix#geoip-client;1.70.0 netflix#nfi18n-core;1.42.0 netflix#server-context;1.37.0 netflix#statistics;1.7.0 netflix#base-server-plugins;1.13.0 com.google.inject.extensions#guice-servlet;3.0 com.sun.jersey.contribs#jersey-guice;1.9.1 com.sun.jersey#jersey-bundle;1.9.1 com.google.inject.extensions#guice-multibindings;3.0 
+
+com.ibm.icu#icu4j;4.8.1
+    via: [netflix#base-server;1.81.0, netflix#nfi18n-core;1.42.0]
+    deps: 
+
+netflix#geoip-client;1.70.0
+    via: [netflix#base-server;1.81.0]
+    deps: commons-httpclient#commons-httpclient;3.1 commons-configuration#commons-configuration;1.8 com.google.guava#guava;11.0.1 com.thoughtworks.xstream#xstream;1.3 netflix#basicTypes;1.39.0 netflix#nflibrary;2.75 netflix#platform-aws;2.75 netflix#platform-core;2.75 netflix#platform-ipc;2.75 netflix#platform-utils;2.75 netflix#server-context;1.34.0 netflix#identity;1.79.0 netflix#mapping-registry;1.15.0 netflix#platform-dependency-command;1.65.0 
+
+netflix#nfi18n-core;1.42.0
+    via: [netflix#base-server;1.81.0]
+    deps: commons-configuration#commons-configuration;1.8 netflix#nflibrary;2.102 netflix#basicTypes;1.40.0 netflix#platform-core;2.102 netflix#server-context;1.34.0 com.ibm.icu#icu4j;4.8.1 
+
+netflix#identity;1.79.0
+    via: [netflix#geoip-client;1.70.0]
+    deps: com.google.guava#guava;11.0.1 commons-configuration#commons-configuration;1.8 org.json#json;1.0 javax.xml.bind#jaxb-api;2.2.3 com.googlecode.json-simple#json-simple;1.1 netflix#basicTypes;1.39.0 netflix#hermes;1.49.0 netflix#membership-types;1.19.0 netflix#nflibrary;2.75 netflix#platform-core;2.75 netflix#platform-dc;2.75 netflix#platform-ipc;2.75 netflix#platform-utils;2.75 netflix#server-context;1.34.0 netflix#cryptexclient;2.75 netflix#httputil;1.60.0 
+
+netflix#mapping-registry;1.15.0
+    via: [netflix#geoip-client;1.70.0]
+    deps: com.google.guava#guava;11.0.1 commons-configuration#commons-configuration;1.8 netflix#basicTypes;1.38.0 netflix#nflibrary;2.64 netflix#platform-core;2.64 netflix#nfastyanax;1.23.0 
+
+com.googlecode.json-simple#json-simple;1.1
+    via: [netflix#identity;1.79.0]
+    deps: 
+
+netflix#hermes;1.49.0
+    via: [netflix#identity;1.79.0]
+    deps: commons-io#commons-io;1.4 net.jcip#jcip-annotations;1.0 org.xerial.snappy#snappy-java;1.0.4.1 netflix#platform;2.64 netflix#nfastyanax;1.21.0 netflix#nfzookeeper;1.34.0 
+
+netflix#membership-types;1.19.0
+    via: [netflix#identity;1.79.0]
+    deps: netflix#platform;2.50 netflix#apputils;1.49.0 
+
+netflix#httputil;1.60.0
+    via: [netflix#identity;1.79.0]
+    deps: commons-httpclient#commons-httpclient;3.1 org.apache.cxf#cxf;2.2.3 javax.xml.bind#jaxb-api;2.1 com.sun.xml.bind#jaxb-impl;2.1.9 netflix#platform;1.145.0 netflix#apputils;1.45.0 netflix#epic-plugin;1.19.0 
+
+netflix#json;1.0
+    via: [org.json#json;1.0]
+    deps: 
+
+net.jcip#jcip-annotations;1.0
+    via: [netflix#hermes;1.49.0]
+    deps: 
+
+jline#jline;0.9.94
+    via: [org.apache.zookeeper#zookeeper;3.3.5, org.apache.zookeeper#zookeeper;3.4.5]
+    deps: 
+
+netflix#apputils;1.49.0
+    via: [netflix#evcache-client2;1.19.0, netflix#membership-types;1.19.0]
+    deps: netflix#nflibrary;2.16 netflix#platform-core;2.16 netflix#platform-utils;2.16 
+
+org.apache.cxf#cxf;2.2.3
+    via: [netflix#httputil;1.60.0]
+    deps: commons-logging#commons-logging;1.1.1 javax.activation#activation;1.1.1 org.apache.geronimo.specs#geronimo-annotation_1.0_spec;1.1.1 stax#stax-api;1.0.1 org.apache.neethi#neethi;2.0.4 org.apache.ws.commons.schema#XmlSchema;1.4.2 javax.xml.bind#jaxb-api;2.1 com.sun.xml.bind#jaxb-impl;2.1.9 javax.xml.ws#jaxws-api;2.2 org.codehaus.woodstox#wstx-asl;3.2.7 wsdl4j#wsdl4j;1.6.1 javax.xml.soap#saaj-api;1.3 com.sun.xml.messaging.saaj#saaj-impl;1.3 org.apache.geronimo.specs#geronimo-jaxws_2.1_spec;1.0 org.apache.geronimo.specs#geronimo-ws-metadata_2.0_spec;1.1.2 asm#asm;3.1 org.codehaus.jettison#jettison;1.2 
+
+org.apache.geronimo.specs#geronimo-annotation_1.0_spec;1.1.1
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+org.apache.neethi#neethi;2.0.4
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: wsdl4j#wsdl4j;1.6.1+ org.codehaus.woodstox#wstx-asl;3.2.8 commons-logging#commons-logging;1.1.1 
+
+org.apache.ws.commons.schema#XmlSchema;1.4.2
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+javax.xml.ws#jaxws-api;2.2
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+wsdl4j#wsdl4j;1.6.1
+    via: [org.apache.cxf#cxf;2.2.3, org.apache.neethi#neethi;2.0.4]
+    deps: 
+
+javax.xml.soap#saaj-api;1.3
+    via: [com.sun.xml.messaging.saaj#saaj-impl;1.3, org.apache.cxf#cxf;2.2.3]
+    deps: javax.activation#activation;[1.0.2,1.1+] 
+
+com.sun.xml.messaging.saaj#saaj-impl;1.3
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: javax.xml.soap#saaj-api;1.3 
+
+org.apache.geronimo.specs#geronimo-jaxws_2.1_spec;1.0
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: org.apache.geronimo.specs#geronimo-activation_1.1_spec;1.0.2 
+
+org.apache.geronimo.specs#geronimo-ws-metadata_2.0_spec;1.1.2
+    via: [org.apache.cxf#cxf;2.2.3]
+    deps: 
+
+org.apache.geronimo.specs#geronimo-activation_1.1_spec;1.0.2
+    via: [org.apache.geronimo.specs#geronimo-jaxws_2.1_spec;1.0]
+    deps: 
+
+org.apache.solr#solr-solrj;1.4.0
+    via: [netflix#evcache-client;1.99.0]
+    deps: org.slf4j#slf4j-api;1.5.5 commons-httpclient#commons-httpclient;3.1 commons-codec#commons-codec;1.3 commons-io#commons-io;1.4 commons-fileupload#commons-fileupload;1.2.1 org.codehaus.woodstox#wstx-asl;3.2.7 org.apache.geronimo.specs#geronimo-stax-api_1.0_spec;1.0.1 
+
+commons-fileupload#commons-fileupload;1.2.1
+    via: [org.apache.solr#solr-solrj;1.4.0]
+    deps: 
+
+org.apache.geronimo.specs#geronimo-stax-api_1.0_spec;1.0.1
+    via: [org.apache.solr#solr-solrj;1.4.0]
+    deps: 
+
+libthrift#libthrift;0.7.0
+    via: [netflix#chukwaCollector;0.23.7, netflix#chukwaCollector;0.25.5]
+    deps: org.apache.thrift#libthrift;0.7.0 
+
+netflix#chukwa-core;0.3.0
+    via: [netflix#chukwaCollector;0.23.7, netflix#chukwaCollector;0.25.5]
+    deps: 
+
+junit#junit-dep;4.10
+    via: [netflix#chukwaCollector;0.23.7, netflix#chukwaCollector;0.25.5, netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: org.hamcrest#hamcrest-core;1.1 
+
+org.hamcrest#hamcrest-core;1.1
+    via: [junit#junit-dep;4.10]
+    deps: 
+
+netflix#chukwaCollector;0.25.5
+    via: [netflix#evcache-client2;1.19.0]
+    deps: libthrift#libthrift;0.7.0 netflix#chukwa-core;0.3.0 netflix#platform-management;2.116 netflix#platform-ipc;2.116 netflix#platform-aws;2.116 netflix#platform-utils;2.116 netflix#platform-core;2.116 netflix#nflibrary;2.116 netflix#atlas-client;1.29 com.netflix.astyanax#astyanax;1.56.23 kafka#core;kafka-0.7.1.9 junit#junit-dep;4.10 
+
+netflix#atlas-client;1.29
+    via: [netflix#chukwaCollector;0.25.5]
+    deps: netflix#platform-aws;2.116 netflix#platform-core;2.116 com.google.guava#guava;11.0.2 com.netflix.servo#servo-aws;0.4.32 com.netflix.servo#servo-core;0.4.32 org.slf4j#slf4j-api;1.5.+ 
+
+kafka#core;kafka-0.7.1.9
+    via: [netflix#chukwaCollector;0.25.5]
+    deps: org.scala-lang#scala-library;2.9.2 com.netflix.curator#curator-recipes;1.2.5 com.netflix.curator#curator-framework;1.2.5 com.netflix.curator#curator-client;1.2.5 com.netflix.curator#curator-x-discovery;1.2.5 com.netflix.curator#curator-x-zkclient-bridge;1.2.5 netflix#nflibrary;2.75 netflix#platform-management;2.75 netflix#platform-core;2.75 netflix#atlas-client;1.28 netflix#nfzookeeper;1.37.0 commons-configuration#commons-configuration;1.6 jopt-simple#jopt-simple;3.2 org.xerial.snappy#snappy-java;1.0.4.1 
+
+com.netflix.servo#servo-aws;0.4.32
+    via: [netflix#atlas-client;1.29]
+    deps: org.slf4j#slf4j-api;1.6.3 com.google.guava#guava;11.0.1 com.google.code.findbugs#annotations;2.0.0 com.netflix.servo#servo-core;0.4.32 com.amazonaws#aws-java-sdk;1.3.27 
+
+org.scala-lang#scala-library;2.9.2
+    via: [kafka#core;kafka-0.7.1.9]
+    deps: 
+
+com.netflix.curator#curator-recipes;1.2.5
+    via: [com.netflix.curator#curator-x-discovery;1.2.5, kafka#core;kafka-0.7.1.9, netflix#nfzookeeper;1.37.0]
+    deps: org.apache.zookeeper#zookeeper;3.4.5 com.google.guava#guava;11.0.1 com.netflix.curator#curator-framework;1.2.5 
+
+com.netflix.curator#curator-framework;1.2.5
+    via: [com.netflix.curator#curator-recipes;1.2.5, com.netflix.curator#curator-x-zkclient-bridge;1.2.5, kafka#core;kafka-0.7.1.9, netflix#nfzookeeper;1.37.0]
+    deps: org.apache.zookeeper#zookeeper;3.4.5 com.google.guava#guava;11.0.1 com.netflix.curator#curator-client;1.2.5 
+
+com.netflix.curator#curator-client;1.2.5
+    via: [com.netflix.curator#curator-framework;1.2.5, com.netflix.curator#curator-x-zkclient-bridge;1.2.5, kafka#core;kafka-0.7.1.9, netflix#nfzookeeper;1.37.0]
+    deps: org.apache.zookeeper#zookeeper;3.4.5 com.google.guava#guava;11.0.1 org.slf4j#slf4j-api;1.6.4 
+
+com.netflix.curator#curator-x-discovery;1.2.5
+    via: [kafka#core;kafka-0.7.1.9]
+    deps: org.apache.zookeeper#zookeeper;3.4.5 com.google.guava#guava;11.0.1 com.netflix.curator#curator-recipes;1.2.5 org.codehaus.jackson#jackson-mapper-asl;1.9.2 
+
+com.netflix.curator#curator-x-zkclient-bridge;1.2.5
+    via: [kafka#core;kafka-0.7.1.9]
+    deps: org.apache.zookeeper#zookeeper;3.4.5 com.google.guava#guava;11.0.1 com.netflix.curator#curator-client;1.2.5 com.netflix.curator#curator-framework;1.2.5 com.github.sgroschupf#zkclient;0.1 
+
+netflix#nfzookeeper;1.37.0
+    via: [kafka#core;kafka-0.7.1.9]
+    deps: netflix#platform;2.82 com.google.guava#guava;11.0.1 org.slf4j#slf4j-api;1.6.3 com.netflix.curator#curator-client;1.2.5 com.netflix.curator#curator-framework;1.2.5 com.netflix.curator#curator-recipes;1.2.5 
+
+jopt-simple#jopt-simple;3.2
+    via: [kafka#core;kafka-0.7.1.9]
+    deps: joda-time#joda-time;1.6 org.apache.ant#ant;1.7.0 
+
+org.apache.zookeeper#zookeeper;3.4.5
+    via: [com.netflix.curator#curator-client;1.2.5, com.netflix.curator#curator-framework;1.2.5, com.netflix.curator#curator-recipes;1.2.5, com.netflix.curator#curator-x-discovery;1.2.5, com.netflix.curator#curator-x-zkclient-bridge;1.2.5]
+    deps: org.slf4j#slf4j-api;1.6.1 org.slf4j#slf4j-log4j12;1.6.1 log4j#log4j;1.2.15 jline#jline;0.9.94 org.jboss.netty#netty;3.2.2.Final 
+
+com.github.sgroschupf#zkclient;0.1
+    via: [com.netflix.curator#curator-x-zkclient-bridge;1.2.5]
+    deps: org.apache.zookeeper#zookeeper;3.3.3 log4j#log4j;1.2.14 
+
+org.apache.ant#ant;1.7.0
+    via: [jopt-simple#jopt-simple;3.2]
+    deps: org.apache.ant#ant-launcher;1.7.0 
+
+org.apache.ant#ant-launcher;1.7.0
+    via: [org.apache.ant#ant;1.7.0]
+    deps: 
+
+netflix#base-explorer-resources;1.7.0
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: netflix#base-explorer;2.245 netflix#nfastyanax;1.45.0 netflix#platform;2.245 
+
+mockit#mockit;0.999.3
+    via: [netflix#csi-explorer;working@jenkins_slave-6c90f834]
+    deps: 
