@@ -13,7 +13,8 @@ import optparse
 import requests
 
 from bs4 import BeautifulSoup
-import requests
+from clint.textui import colored
+
 
 # http://stackoverflow.com/questions/11887762/how-to-compare-version-style-strings
 def versiontuple(v):
@@ -52,14 +53,17 @@ def get_for_lib(log, org, lib, version):
 
     newer_count = len(found_release)
     if newer_count > 0:
-        log.info(' * {0}/{1}/{2} from {3} is BEHIND'.format (org, lib, version,
-                                                             release.upper()))
-        log.info('   ! there are {0} newer version(s) available in {1}'.format(newer_count, 
-                                                                           release))
-        log.debug('    ! -> {0}'.format(found_release))
+        log.info('{0}/{1}/{2} from {3} is {4} [{5}] is available'.format(org, lib, version,
+                                                         release.upper(),
+                                                         colored.yellow('BEHIND'),
+                                                         str(found_release[-1])))
+
+        log.debug(' - there are {0} newer version(s) available in {1}'.format(newer_count, release.upper()))
+        log.debug('   -> {0}'.format(found_release))
     else:
-        log.info(' = {0}/{1}/{2} from {3} is OK'.format(org, lib, version,
-                                                            release.upper()))
+        log.info('{0}/{1}/{2} from {3} is {4}'.format(org, lib, version,
+                                                         release.upper(),
+                                                         colored.green('OK')))
 
 def parse_file(log, filename):
     """"""
@@ -141,6 +145,7 @@ def main():
     log = logging.getLogger(__name__)
     p = optparse.OptionParser()
     p.add_option('--file', '-f', default="transitive-dependencies.txt")
+    p.add_option('--debug', '-d', action="store_true", default=False)
     options, arguments = p.parse_args()
 
     logging.info('Started. parsing {0}'.format(options.file))
